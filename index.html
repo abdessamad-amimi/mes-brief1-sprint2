@@ -48,12 +48,12 @@
       <section class="panel" aria-labelledby="titre-panier">
         <div class="section-heading">
           <h2 id="titre-panier">Mon panier</h2>
-          <span><span id="compteur">0</span> produit(s)</span>
+          <span><span id="compteur"></span> produit(s)</span>
         </div>
         <ul id="liste-produits" class="liste"></ul>
-        <p id="etat-vide" class="empty">Votre panier est vide.</p>
+        <p id="etat-vide" class="empty hidden">Votre panier est vide.</p>
         <p class="total">
-          Total <strong><span id="total">0.00</span> MAD</strong>
+          Total <strong><span id="total"></span> MAD</strong>
         </p>
       </section>
     </main>
@@ -62,7 +62,8 @@
     <template id="modele-produit">
       <li class="produit">
         <div>
-          <strong class="nom-produit"></strong><span class="prix-produit"></span>
+          <strong class="nom-produit"></strong>
+          <span class="prix-produit"></span>
         </div>
         <button class="supprimer" type="button">Retirer</button>
       </li>
